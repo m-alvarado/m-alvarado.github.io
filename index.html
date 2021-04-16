@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Volder</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo-index.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+
+	<script src="js/scrollreveal.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	
+</head>
+<body>
+	<div class="header row">
+		<h1>Volder</h1>
+	</div>
+	<div class="main row center-xs">
+		<div class="vol_expl">
+				<h3 class="vol-expl-titulo text-center text-muted">¿Qué es Volder?</h3>
+			<p class="p-4 vol-expl-texto">Volder es una herramienta virtual desarrollada por <a href="">Vale4</a>, ideada como un sistema de organización escolar donde los profesores podrán subir, almacenar y gestionar los trabajos y evaluaciones que impartan en sus cursos, administrada por secretarios y preceptores.</p>
+		</div>
+		<div class="ventajas">
+				<h3 class="ventajas-titulo text-center text-muted">Ventajas</h3>
+			<ul class="p-4 ventajas-texto">
+				<li>100% de estudiantes con la carpeta completa.</li>
+				<li>Sistema de jerárquico tal y como funciona en las escuelas.</li>
+				<li>Comunicación directa entre preceptores, profesores y alumnos sin intervensión de terceros.</li>
+				<li>Evita alternar entre muchos programas o aplicaciones haciendo incomodo el trabajo.</li>
+			</ul>
+		</div>
+		<div class="jerarquias">
+			<div class="jer-text">
+				<h3>Jerarquías</h3>
+				<p>Mediante este sistema intentamos replicar el mismo funcionamiento que en las clases presenciales en cuanto a la organización, otorgando permisos administrativos según el estatus de la cuenta.
+				</p>
+			</div>
+			<div class="carrousel">
+
+				<div class="carrousel__contenedor">
+					<button arial-label="anterior" class="carrousel__anterior" >
+						<i class="fas fa-chevron-left"></i>
+					</button>
+					<div class="carrousel__lista">
+
+						<div class="carrousel__elemento">
+							<img src="img/jer-img/secretarios.png" alt="Funciones Secretarios" title="Funciones Secretarios">
+						</div>
+
+						<div class="carrousel__elemento">
+							<img src="img/jer-img/Preceptores.png" alt="Funciones Preceptores" title="Funciones Preceptores">
+						</div>
+
+						<div class="carrousel__elemento">
+							<img src="img/jer-img/Profesores.png" alt="Funciones Profesores" title="Funciones Profesores">
+						</div>
+
+						<div class="carrousel__elemento">
+							<img src="img/jer-img/Estudiantes.png" alt="Funciones Estudiantes" title="Funciones Estudiantes">
+						</div>
+						
+					</div>
+					<button arial-label="siguiente" class="carrousel__siguiente" >
+						<i class="fas fa-chevron-right"></i>
+					</button>
+				</div>
+				<div role="tablist" class="carrousel__indicadores"></div>
+			</div>	
+		</div>
+		<div class="wrap">
+			<div class="wrap-top">
+				<h3>Funciones</h3>
+				<div class="nav-bar my-auto">
+					<i class="icon-bars"></i>
+				</div>
+			</div>
+			<div class="pest-small">
+				<ul>
+					<li>
+						<a href="#tab1">
+							<span>Secretarios</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab2">
+							<span>Preceptores</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab3">
+							<span>Profesores</span>
+						</a>
+					</li>
+					<li>
+						<a href="#tab4">
+							<span>Estudiantes</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<ul class="tabs">
+				<li class="large">
+					<a href="#tab1">
+						<span class="tab-text">Secretarios</span>
+					</a>
+				</li>
+				<li class="large">
+					<a href="#tab2">
+						<span class="tab-text">Preceptores</span>
+					</a>
+				</li >
+				<li class="large">
+					<a href="#tab3">
+						<span class="tab-text">Profesores</span>
+					</a>
+				</li>
+				<li class="large">
+					<a href="#tab4">
+						<span class="tab-text">Estudiantes</span>
+					</a>
+				</li>
+			</ul>
+			<div class="secciones">
+				<article id="tab1">
+					<h3>Secretaría</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/sec-tuto/sec-img-1.png" alt="Secretario inicio" title="Secretario inicio">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>Al entrar al inicio tendrás disponible 4 opciones para administrar. <b>Cursos</b>, <b>Estudiantes</b>, <b>Profesores</b> y <b>Preceptores</b></p>
+						</div>
+					</div>
+					<h3>Cursos</h3>
+					<div class="opcion">
+						<div class="text-tuto text-tuto-right">
+							<p>Después de seleccionar que curso desea inspeccionar podrá acceder a un chat privado tanto con los profesores y los estudiantes haciendo click en sus respectivos nombres. Además puede ingresar a todos los trabajos por materia en la parte inferior de la pantalla</p>
+						</div>
+						<div class="img">
+							<img src="img/sec-tuto/sec-img-3.png" alt="Cursos" title="Administrar cursos">
+						</div>
+					</div>
+				</article>
+				
+				<article id="tab2">
+					<h3>Administrar un curso</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/prec-tuto/prec-img-1.png" alt="Preceptor inicio" title="Inicio Preceptor">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>Para administrar un curso primero selecciona la opción <b>Seleccione un curso a gestionar</b> en la parte superior, se despliegará una lista de todos los cursos en los que esté autorizado/da.</p>
+						</div>
+					</div>
+					<h3>Agregar un estudiante</h3>
+					<div class="opcion">
+						<div class="text-tuto text-tuto-right">
+							<p>Al seleccionar el curso seleccione la opcion <b>agregar estudiantes</b> y será enviado a un formulario, ingrese los datos del usuario requeridos y ya estará inscripto.</p>
+						</div>
+						<div class="img">
+							<img src="img/prec-tuto/prec-img-2.png" alt="Estudiantes" title="Estudiantes">
+						</div>
+					</div>
+					<h3>Agregar una materia</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/prec-tuto/prec-img-3.png" alt="Materias" title="Materias">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>También se podrá agregar materias presionando <b>Agregar materia</b>, solo tiene que poner el nombre de la materia y seleccionar al profesor a cargo.</p>
+						</div>
+					</div>
+					<h3>Notificaciones</h3>
+					<div class="opcion">
+						<div class="text-tuto text-tuto-right">
+							<p>Al entrar en la sección de noticias estarán 3 pestañas: Los notificados de los Secretarios, Profesores y los propios. Cada una contiene todos los notificados que hayan hecho</p>
+						</div>
+						
+						<div class="img">
+							<img src="img/prec-tuto/prec-img-4.png" alt="Notificaciones" title="Notificaciones">
+						</div>
+					</div>
+					<h3>Crear un notificado</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/prec-tuto/prec-img-5.png" alt="Notificaciones" title="Notificaciones">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>Al crear un notificado seleccione el/los cursos que quiera notificar y podrá adjuntar links e imágenes.</p>
+						</div>
+					</div>
+				</article>
+				
+				<article id="tab3">
+					<h3>¿Como subo o edito un trabajo?</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/pfr-tuto/inicio.png" alt="Inicio" title="Último 4 Trabajos">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>En el inicio podrás dar click a <b>Nuevo trabajo</b> y te llevara a un formulario que deberas completar
+							para subir un nuevo trabajo
+							</p>
+						</div>
+					</div>
+					<div class="opcion">
+						<div class="text-tuto text-tuto-right">
+							<p>En el formulario tendra que poner la actividad que desee mandar expecificando al curso y materia que va dirigido el nuevo trabajo</p>
+						</div>
+
+						<div class="img">
+							<img src="img/pfr-tuto/formulario-trabajo.png" alt="Nuevo trabajo" title="Trabajo">
+						</div>
+					</div>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/pfr-tuto/vista trabajo.png" alt="Materias" title="Materias">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>Luego desde el inicio podrá acceder a cada uno de sus trabajos y ver si hay comentarios o aclaraciones que dar o en caso que quiera editarlo solo da click en <b>editar</b></p>
+						</div>
+					
+
+					</div>
+				
+					<div class="opcion">
+				
+						<div class="text-tuto text-tuto-right">
+							<p>Desde ahí aparecerá el trabajo con un formato de formulario y podrá hacer las ediciones que quiera
+							   y sí da click en <b>actualizar</b> se guardaran los cambios. <br>
+							   Del mismo modo si quiere cancelar la edición solo da click en <b>cancelar</b> y el trabajo volverá a la normalidad
+							</p>
+						</div>
+						
+						<div class="img">
+							<img src="img/pfr-tuto/editar-trabajo.png" alt="Materias" title="Materias">
+						</div>
+					</div>
+				
+					
+				</article>
+				
+				<article id="tab4">
+					<h3>¿Donde veo los trabajos?</h3>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/est-tuto/est-tuto-inicio.png" alt="Inicio" title="Último 4 Trabajos">
+						</div>
+						<div class="text-tuto text-tuto-left">
+							<p>En el inicio estarán los últimos 4 trabajos cargados por los profesores, ahí podrás clickear en <b>Ver más</b> y te llevará al la publicación.</p>
+						</div>
+					</div>
+
+					<div class="opcion">
+						<div class="text-tuto text-tuto-right">
+							<p>Otra manera de acceder a los trabajos es haciendo click en el menú lateral izquierdo, en la opción <b>Materias</b>, y en la lista de materias clickear el botón <b>Ver trabajos</b>.</p>
+						</div>
+
+						<div class="img">
+							<img src="img/est-tuto/est-tuto-materias.png" alt="Materias" title="Materias">
+						</div>
+					</div>
+					<div class="opcion">
+						<div class="img">
+							<img src="img/est-tuto/est-tuto-materias.png" alt="Materias" title="Materias">
+						</div>
+
+						<div class="text-tuto text-tuto-left">
+							<p>Al clickear en el botón <b> ver trabajos </b> entrará al historial de la materia estando disponibles todos los trabajos y evaluaciones de la misma. Presione el botón <b>ver más</b> para ver la publicación.</p>
+						</div>
+					</div>
+					<h3>Vista del Trabajo</h3>
+					<div class="opcion">
+			
+						<div class="text-tuto text-tuto-right">
+							<p>En el centro de la página podrá ver la consigna enviada por el profesor. Y a la izquierda está la sección de comentarios, donde los estudiantes pueden consultar a los profesores sobre sus dudas acerca del trabajo..</p>
+						</div>
+						<div class="img">
+							<img src="img/est-tuto/est-vista-1.png" alt="Trabajo" title="Vista del trabajo">
+						</div>
+					</div>
+
+				</article>
+			</div>
+		</div>
+		<!-- <div class="row explicacion mt-5 p-4">
+			<p class="h2 text-center">Aclaraciones:</p>	
+		</div>
+		<div class="row mb-3">
+			historial
+		</div> -->
+	</div>
+<!-- 
+	<footer>
+		
+	</footer> -->
+
+	<script src="js/scroll-anim.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/a6bb5ec6ac.js" crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/menu.js"></script>
+</body>
+</html>
