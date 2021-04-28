@@ -2,7 +2,7 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-.to(".montana-2", 3, {y:-200})
+.to(".montana-2", 3, {y:50})
 .to(".montana-1", 3, {y:100},'-=3')
 .to(".montana-1", 3, {display:"none"},'-=3')
 .to(".tipo", 3, {y:-500},'-=3')
