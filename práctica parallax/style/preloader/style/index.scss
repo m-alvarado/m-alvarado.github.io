@@ -1,0 +1,329 @@
+// @import "partes/_var.scss";
+
+// @import "partes/_container.scss";
+
+// @import "partes/_general.scss";
+
+// @import "partes/_sticks.scss";
+
+// @import "partes/_keyframes.scss";
+
+
+$bg:#1a0f3b;
+$rojo:#c0392b;
+$naranja:#f39c12;
+$amarillo:#f1c40f;
+$amarillo2:#def10f;
+$verde:#2ecc71;
+$celeste:#34dbd0;
+$celeste2:#3498db;
+$azulClaro:#3488db;
+$azul:#3434db;
+$violeta:#9b59b6;
+$rosa:#d834db;
+
+
+body{
+	background-color:$bg;
+	position:relative;
+}
+.main{
+	width:500px;
+	height:50vh;
+	top:150px;
+	left:32%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+}
+.father{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.ball{
+	width:1px;
+	margin:0 1.3rem;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	position:relative;
+	animation:rot 2s linear infinite;
+	&:after, &:before{
+		content:"";
+		display:block;
+		width:5px;
+		height:5px;
+		border-radius:50%;
+		position:absolute;
+		
+	}
+
+}
+.-uno{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$rojo;
+	}
+	&:after{
+		background-color:$rojo;
+		animation:dot-out 2s linear infinite;
+	}
+}
+.-dos{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$naranja;
+		animation-delay:.05s;
+	}
+	&:after{
+		background-color:$naranja;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.05s;
+	}
+}
+.-tres{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$amarillo;
+		animation-delay:.1s;
+	}
+	&:after{
+		background-color:$amarillo;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.1s;
+	}
+}
+.-cuatro{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$amarillo2;
+		animation-delay:.15s;
+	}
+	&:after{
+		background-color:$amarillo2;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.15s;
+	}
+}
+
+.-cinco{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$verde;
+		animation-delay:.2s;
+	}
+	&:after{
+		background-color:$verde;
+		animation-delay:.2s;
+		animation:dot-out 2s linear infinite;
+	}
+}
+
+.-seis{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$celeste;
+		animation-delay:.25s;
+	}
+	&:after{
+		background-color:$celeste;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.25s;
+	}
+}
+.-siete{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$celeste2;
+		animation-delay:.3s;
+	}
+	&:after{
+		background-color:$celeste2;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.3s;
+	}
+}
+.-ocho{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$azulClaro;
+		animation-delay:.35s;
+	}
+	&:after{
+		background-color:$azulClaro;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.35s;
+	}
+}
+.-nueve{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$azul;
+		animation-delay:.4s;
+	}
+	&:after{
+		background-color:$azul;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.4s;
+	}
+}
+.-diez{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$violeta;
+		animation-delay:.45s;
+	}
+	&:after{
+		background-color:$violeta;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.45s;
+	}
+}
+.-once{
+	&:before{
+		animation:dot-out-before 2s linear infinite;
+		background-color:$rosa;
+		animation-delay:.5s;
+	}
+	&:after{
+		background-color:$rosa;
+		animation:dot-out 2s linear infinite;
+		animation-delay:.5s
+	}
+}
+.stick{
+	width:1px;
+	background-color:blue;
+	position:relative;
+	display:flex;
+	justify-content:center;
+	animation:palo 2s linear infinite;
+	&:after, &:before{
+		content:"";
+		display:block;
+		width:7px;
+		height:7px;
+		border-radius:50%;
+		position:absolute;
+	}
+	&:before{
+		bottom:0;
+	}
+	&:after{
+		top:-5px;
+	}
+}
+
+
+.uno{
+	background-color:$azul;
+	&:after, &:before{
+		background-color:$rojo;
+	}
+}
+
+.dos{
+	background-color:$violeta;
+	animation-delay:.05s;
+	&:after, &:before{
+		background-color:$naranja;
+	}
+}
+.tres{
+	background-color:$rosa;
+	animation-delay:.10s;
+	&:after, &:before{
+		background-color:$amarillo;
+	}
+}
+.cuatro{
+	background-color:$celeste2;
+	animation-delay:.15s;
+	&:after, &:before{
+		background-color:$amarillo2;
+	}
+}
+.cinco{
+	background-color:$celeste;
+	animation-delay:.20s;
+	&:after, &:before{
+		background-color:$verde;
+	}
+}
+.seis{
+	background-color:$rojo;
+	animation-delay:.25s;
+	&:after, &:before{
+		background-color:$celeste;
+	}
+}
+.siete{
+	background-color:$verde;
+	animation-delay:.30s;
+	&:after, &:before{
+		background-color:$celeste2;
+	}
+}
+.ocho{
+	background-color:$amarillo;
+	animation-delay:.35s;
+	&:after, &:before{
+		background-color:$azulClaro;
+	}
+}
+.nueve{
+	background-color:$naranja;
+	animation-delay:.40s;
+	&:after, &:before{
+		background-color:$azul;
+	}
+}
+.diez{
+	background-color:$amarillo2;
+	animation-delay:.45s;
+	&:after, &:before{
+		background-color:$violeta;
+	}
+}
+.once{
+	background-color:$azulClaro;
+	animation-delay:.5s;
+	&:after, &:before{
+		background-color:$rosa;
+	}
+}
+
+
+@keyframes rot {
+	0%{transform:rotate(-80deg);}
+	70%{transform:rotate(0deg);}
+	100%{transform:rotate(0deg);}
+}
+
+
+@keyframes palo {
+	0%{height:0px;} //transform:rotate(-65deg);}
+	10%{height:40vh;}
+	50%{height:40vh;}
+	60%{height:25vh;}
+	70%{height:	0px;} //transform:rotate(0deg);}	
+	100%{height:0px;}
+}
+
+@keyframes dot-out {
+	0%{bottom:0;}
+	10%{bottom:-30px;}
+	60%{bottom:-30px;}
+	70%{bottom:0;}
+	100%{bottom:0;}
+}
+@keyframes dot-out-before {
+	0%{top:0;}
+	10%{top:-30px;}
+	60%{top:-30px;}
+	70%{top:-5px;}
+	100%{top:-5px;}
+}

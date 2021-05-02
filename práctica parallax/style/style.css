@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+/*    font-family: 'Snippet', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+/*    font-family: 'Gotu', sans-serif;*/
+
+
+
+:root{
+	--black:rgba(24, 24, 24);
+	--col-1:#fdcb6e;
+	--col-2:#00b894;
+	--height:1200px;
+}
+
+
+
+.preloader{
+  min-width:100%;
+  min-height:100vh;
+  background-color: #1a0f3b;
+  position:absolute; 
+  z-index:1000;
+}
+.hidden{
+  overflow:hidden;
+}
+.main {
+  width: 500px;
+  height: 50vh;
+  top: 150px;
+  left: 32%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.father {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.ball {
+  width: 1px;
+  margin: 0 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: rot 2s linear infinite; }
+  .ball:after, .ball:before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute; }
+
+.-uno:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #c0392b; }
+.-uno:after {
+  background-color: #c0392b;
+  animation: dot-out 2s linear infinite; }
+
+.-dos:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #f39c12;
+  animation-delay: .05s; }
+.-dos:after {
+  background-color: #f39c12;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .05s; }
+
+.-tres:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #f1c40f;
+  animation-delay: .1s; }
+.-tres:after {
+  background-color: #f1c40f;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .1s; }
+
+.-cuatro:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #def10f;
+  animation-delay: .15s; }
+.-cuatro:after {
+  background-color: #def10f;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .15s; }
+
+.-cinco:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #2ecc71;
+  animation-delay: .2s; }
+.-cinco:after {
+  background-color: #2ecc71;
+  animation-delay: .2s;
+  animation: dot-out 2s linear infinite; }
+
+.-seis:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #34dbd0;
+  animation-delay: .25s; }
+.-seis:after {
+  background-color: #34dbd0;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .25s; }
+
+.-siete:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #3498db;
+  animation-delay: .3s; }
+.-siete:after {
+  background-color: #3498db;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .3s; }
+
+.-ocho:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #3488db;
+  animation-delay: .35s; }
+.-ocho:after {
+  background-color: #3488db;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .35s; }
+
+.-nueve:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #3434db;
+  animation-delay: .4s; }
+.-nueve:after {
+  background-color: #3434db;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .4s; }
+
+.-diez:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #9b59b6;
+  animation-delay: .45s; }
+.-diez:after {
+  background-color: #9b59b6;
+  animation: dot-out 2s linear infinite;
+  animation-delay: .45s; }
+
+.-once:before {
+  animation: dot-out-before 2s linear infinite;
+  background-color: #d834db;
+  animation-delay: .5s; }
+.-once:after {
+  background-color: #d834db;
+  animation: dot-out 2s linear infinite;
+  animation-delay: 0.5s; }
+
+.stick {
+  width: 1px;
+  background-color: blue;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  animation: palo 2s linear infinite; }
+  .stick:after, .stick:before {
+    content: "";
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    position: absolute; }
+  .stick:before {
+    bottom: 0; }
+  .stick:after {
+    top: -5px; }
+
+.uno {
+  background-color: #3434db; }
+  .uno:after, .uno:before {
+    background-color: #c0392b; }
+
+.dos {
+  background-color: #9b59b6;
+  animation-delay: .05s; }
+  .dos:after, .dos:before {
+    background-color: #f39c12; }
+
+.tres {
+  background-color: #d834db;
+  animation-delay: .10s; }
+  .tres:after, .tres:before {
+    background-color: #f1c40f; }
+
+.cuatro {
+  background-color: #3498db;
+  animation-delay: .15s; }
+  .cuatro:after, .cuatro:before {
+    background-color: #def10f; }
+
+.cinco {
+  background-color: #34dbd0;
+  animation-delay: .20s; }
+  .cinco:after, .cinco:before {
+    background-color: #2ecc71; }
+
+.seis {
+  background-color: #c0392b;
+  animation-delay: .25s; }
+  .seis:after, .seis:before {
+    background-color: #34dbd0; }
+
+.siete {
+  background-color: #2ecc71;
+  animation-delay: .30s; }
+  .siete:after, .siete:before {
+    background-color: #3498db; }
+
+.ocho {
+  background-color: #f1c40f;
+  animation-delay: .35s; }
+  .ocho:after, .ocho:before {
+    background-color: #3488db; }
+
+.nueve {
+  background-color: #f39c12;
+  animation-delay: .40s; }
+  .nueve:after, .nueve:before {
+    background-color: #3434db; }
+
+.diez {
+  background-color: #def10f;
+  animation-delay: .45s; }
+  .diez:after, .diez:before {
+    background-color: #9b59b6; }
+
+.once {
+  background-color: #3488db;
+  animation-delay: .5s; }
+  .once:after, .once:before {
+    background-color: #d834db; }
+
+@keyframes rot {
+  0% {
+    transform: rotate(-80deg); }
+  70% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes palo {
+  0% {
+    height: 0px; }
+  10% {
+    height: 40vh; }
+  50% {
+    height: 40vh; }
+  60% {
+    height: 25vh; }
+  70% {
+    height: 0px; }
+  100% {
+    height: 0px; } }
+@keyframes dot-out {
+  0% {
+    bottom: 0; }
+  10% {
+    bottom: -30px; }
+  60% {
+    bottom: -30px; }
+  70% {
+    bottom: 0; }
+  100% {
+    bottom: 0; } }
+@keyframes dot-out-before {
+  0% {
+    top: 0; }
+  10% {
+    top: -30px; }
+  60% {
+    top: -30px; }
+  70% {
+    top: -5px; }
+  100% {
+    top: -5px; } }
+
+
+
+
+
+
+.container{
+	height:100vh;
+	background:black;
+	z-index:0;
+}
+nav{
+	width:100%;
+	position:absolute;
+	z-index:20;
+	display:flex;
+	justify-content:space-between;
+	padding:2rem;
+	color:#fff;
+	background-image:linear-gradient(to bottom, rgba(45, 52, 54, .8), rgba(0, 0, 0, 0));
+}
+nav h4{
+	font-size:2rem;
+	cursor:pointer;
+	font-family: 'Gotu', sans-serif;
+	text-shadow:5px 3px 5px rgba(0, 0, 0, .3);
+}
+nav h4:hover{
+	text-shadow:6px 3px 10px rgba(0, 0, 0, .7);
+	transition:.3s linear;
+}
+nav a{
+	font-size:1.3rem;
+	font-family: 'Gotu', sans-serif;
+	cursor:pointer;
+	width:13%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:20px;
+}
+nav a:hover{
+	background-color:#fff;
+	color:var(--black);
+	transition:.4s linear;
+}
+.container img{
+	width:100%;
+	position: absolute;
+	height:100vh;
+	object-fit:cover;
+}
+.main-title{
+	position:absolute;
+	color:#fff;
+	z-index:20;
+	top:40%;
+	left:50%;
+	font-size:5rem;
+	transform:translate(-50%, -40%);
+	text-shadow:5px 3px 10px rgba(0, 0, 0, .2),
+				5px -3px 10px rgba(0, 0, 0, .2),
+				-5px 3px 10px rgba(0, 0, 0, .2),
+			   -5px -3px 10px rgba(0, 0, 0, .2);
+	font-family: 'Snippet', sans-serif;
+	cursor:pointer;
+}
+.main-title:hover{
+	text-shadow:15px 13px 20px rgba(0, 0, 0, .4),
+				15px -13px 20px rgba(0, 0, 0, .4),
+				-15px 13px 20px rgba(0, 0, 0, .4),
+			   -15px -13px 20px rgba(0, 0, 0, .4);
+	transition:.4s;
+}
+.content{
+	width:100%;
+	min-height:100vh;
+	background-color:var(--black); 
+	color:white;
+	position:absolute;
+	z-index:100;
+	font-family: 'Gotu', sans-serif;
+}
+.content-images{
+	min-height:65vh;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	text-align:center;
+	box-shadow:30px -50px 30px rgba(24,24,24, 1),
+			  -30px -50px 30px rgba(24,24,24, 1);
+}
+.imgs-nimalaya{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+.content-images img{
+	width:400px;
+	height:250px;
+}
+.content-images h4{
+	font-size:1.7rem;
+	margin:1rem 0;
+	border-bottom:1px solid var(--col-1);
+	width:50%;
+}
+.text{
+	padding:2rem 20%;
+}
+footer{
+	width:100%;
+	height:50px;
+	background-color:rgba(17, 17, 17);
+}
+
+@keyframes loader{
+	0%{border:.5rem solid #8e44ad; width:100px; height:100px;}
+	25%{border:.5rem solid #e74c3c; width:80px; height:80px;}
+	50%{border:.5rem solid #27ae60; width:50px; height:50px;}
+	75%{border:.5rem solid #3498db; width:80px; height:80px;}
+	100%{border:.5rem solid #8e44ad; width:100px; height:100px;}
+}
+@keyframes load{
+	0%{width:100%; height:100vh; border-radius:50%;}
+	25%{width:600px; height:600px; border-radius:50%;}
+	50%{width:400px; height:400px; border-radius:50%;}
+	75%{width:200px; height:200px; border-radius:50%;}
+	100%{width:0%; height:0%; border-radius:50%; display:none;}
+}
+.lesto{
+	
+	background-color:red;	
+}
